@@ -226,7 +226,7 @@ void cmdPrcessing(String & args) {
   }
 
 }
-int lastLedIndex = 0;
+int lastLedIndex = -1;
 void setLightOn(int index) {
   //  Serial.println(index);
   if (index == 0)
@@ -455,6 +455,7 @@ void run(int seed) {
       strip.SetPixelColor(i, colorthis);
     }
     strip.Show();
+    lastLedIndex = -1;
     color = HsbColor(0, 1, 1);
   }
   else {
@@ -551,7 +552,7 @@ HsbColor takeLight(int i) {
   return HsbColor((float)(EEPROM.read(i * 3 + 1)) / 100, (float)(EEPROM.read(i * 3 + 2)) / 100, (float)(EEPROM.read(i * 3 + 3)) / 100);
 }
 void setLastLight() {
-  if (runEn == 0) {
+  if (runEn == 0 && lastLedIndex != -1) {
     //    strip.SetPixelColor(lastLedIndex, color);
     //    strip.Show();
     setLightOn(lastLedIndex + 1);
