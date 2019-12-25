@@ -1,7 +1,7 @@
 ﻿<Window x:Class="彩灯上位机.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="彩灯上位机 —— RGB Pad Control" Height="496.55" Width="621.375" Closing="Window_Closing_1" ResizeMode="CanMinimize" Icon="icon.ico">
+        Title=" RGB Pad Control" Height="496.55" Width="621.375" Closing="Window_Closing_1" ResizeMode="CanMinimize" Icon="icon.ico">
     <Grid Margin="0,0,0,0" Height="358" VerticalAlignment="Top">
 
         <Grid HorizontalAlignment="Left" Height="341" VerticalAlignment="Top" Width="613" Background="#99FFFFFF">
@@ -38,14 +38,14 @@
         <ComboBox x:Name="lsBoud" HorizontalAlignment="Left" Margin="82,67,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btNew" Content="Refresh" HorizontalAlignment="Left" Margin="234,67,0,0" VerticalAlignment="Top" Width="75" Click="btNew_Click"/>
         <TextBox x:Name="txtCmd" HorizontalAlignment="Left" Height="60" Margin="402,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" AcceptsReturn="True"/>
-        <Button x:Name="btRead" Content="Close" HorizontalAlignment="Left" Margin="116,389,0,-51" VerticalAlignment="Top" Width="44" Click="btRead_Click" Height="20"/>
+        <Button x:Name="btRead" Content="Off" HorizontalAlignment="Left" Margin="116,389,0,-51" VerticalAlignment="Top" Width="44" Click="btRead_Click" Height="20"/>
         <Button x:Name="btWrite" Content="Send" HorizontalAlignment="Left" Margin="402,127,0,0" VerticalAlignment="Top" Width="74" Click="btWrite_Click"/>
         <TextBox x:Name="txtLog" HorizontalAlignment="Left" Height="227" Margin="402,169,0,-38" TextWrapping="Wrap" VerticalAlignment="Top" Width="188"/>
         <Label Content="CMD" HorizontalAlignment="Left" Margin="362,49,0,0" VerticalAlignment="Top"/>
         <Label Content="LOG" HorizontalAlignment="Left" Margin="360,155,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="btSet" Content="Open All" HorizontalAlignment="Left" Margin="107,221,0,0" VerticalAlignment="Top" Width="75" Click="btSet_Click"/>
-        <Button x:Name="btSet2" Content="Close All" HorizontalAlignment="Left" Margin="194,221,0,0" VerticalAlignment="Top" Width="75" Click="BtSet2_Click"/>
+        <Button x:Name="btSet" Content="On All" HorizontalAlignment="Left" Margin="107,221,0,0" VerticalAlignment="Top" Width="75" Click="btSet_Click"/>
+        <Button x:Name="btSet2" Content="Off All" HorizontalAlignment="Left" Margin="194,221,0,0" VerticalAlignment="Top" Width="75" Click="BtSet2_Click"/>
         <Label Content="Lamp：" HorizontalAlignment="Left" Margin="61,386,0,-53" VerticalAlignment="Top"/>
         <Button x:Name="btSetVal2" Content="+" HorizontalAlignment="Left" Margin="175,389,0,-50" VerticalAlignment="Top" Width="41" Click="BtSetVal2_Click"/>
         <Button x:Name="btSetVal3" Content="-" HorizontalAlignment="Left" Margin="228,389,0,-50" VerticalAlignment="Top" Width="41" Click="BtSetVal3_Click"/>

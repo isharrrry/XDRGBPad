@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Windows;
 
-namespace 智慧家庭安装工具
+namespace 彩灯上位机
 {
     /// <summary>
     /// App.xaml 的交互逻辑

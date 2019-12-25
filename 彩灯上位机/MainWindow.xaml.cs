@@ -147,7 +147,7 @@ namespace 彩灯上位机
             if (!com.IsOpen)
             {
 
-                MessageBox.Show("Please connection device firstly");
+                MessageBox.Show("Please connect device firstly");
                 return;
             }
             com.Write(txtCmd.Text);
