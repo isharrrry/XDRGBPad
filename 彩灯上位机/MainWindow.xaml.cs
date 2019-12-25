@@ -24,7 +24,7 @@ namespace 彩灯上位机
     {
 
         SerialPort com = new SerialPort();
-        string[] btStatus = new string[] { "打开", "关闭" };
+        string[] btStatus = new string[] { "Open", "Close" };
 
         public MainWindow()
         {
@@ -81,7 +81,7 @@ namespace 彩灯上位机
             }
             catch (Exception ex)
             {
-                MessageBox.Show("串口出错，请检查！\n", ex.Message.ToString());
+                MessageBox.Show("Select serial post that could not be open！\n", ex.Message.ToString());
             }
         }
 
@@ -147,7 +147,7 @@ namespace 彩灯上位机
             if (!com.IsOpen)
             {
 
-                MessageBox.Show("请先连接设备");
+                MessageBox.Show("Please connection device firstly");
                 return;
             }
             com.Write(txtCmd.Text);
@@ -592,5 +592,9 @@ namespace 彩灯上位机
             { strs = null; }
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("\nPlease contact us if that has translation errors \n——XD Artistic Group  xiudi@outlook.com\n\n\ndesigned by harrrry ", "XD Artistic Group");
+        }
     }
 }
